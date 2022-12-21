@@ -8,9 +8,13 @@ public struct SettingsView: View {
 
   @Environment(\.presentationMode)
   var presentationMode
-
+    
+  @State
+  private var showResponse = true
+    
   @State
   private var showingAlert = false
+ 
 
   @State private var selectedOption: Theme = AppTheme.getTheme()
 
@@ -40,6 +44,16 @@ public struct SettingsView: View {
                 .font(.custom(font: .inter, size: 17, weight: .regular))
             }
           }
+            VStack {
+                Toggle("Face ID", isOn: $showResponse)
+                    .toggleStyle(SwitchToggleStyle(tint .red))
+                if showResponse {
+                    Text("Face ID")
+                        .font(.custom(font: .inter, size: 17, weight: .regular))
+                }
+                
+                
+            }
           NavigationLink(
             destination: VStack {
               Form {
@@ -59,7 +73,8 @@ public struct SettingsView: View {
                 }
               }
             }
-          ) {
+          )
+            {
             HStack(spacing: 16) {
               ColoredIconView(
                 imageName: "paintpalette.fill", foregroundColor: Color(.white),

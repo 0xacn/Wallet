@@ -639,7 +639,7 @@
 				DEVELOPMENT_TEAM = 4Z47XRX22C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Light/Resources/Info.plist;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Access your wallet";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your wallet via FaceID";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -676,7 +676,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4Z47XRX22C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Light/Resources/Info.plist;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Access your wallet";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Unlock your wallet via FaceID";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
